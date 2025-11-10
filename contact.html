@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Oussama Ouakmour</title>
+  <link rel="stylesheet" href="contact.css">
+<style>
+    * 
+  .{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: burlywood;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background:grey;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00bcd4;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== FORMULAIRE ===== */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.btn-send {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background: #0099aa;
+}
+
+/* ===== INFO ===== */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="cv.html">Accueil</a></li>
+      
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Contact -->
+  <section class="contact-section">
+    <h1>Contactez-moi</h1>
+    <p>Vous avez un projet, une question ou une collaboration à proposer ? N'hésitez pas à me contacter via le formulaire ci-dessous 👇</p>
+
+    <div class="contact-container">
+      <form action="send.php" method="post" class="contact-form">
+        <div class="input-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message..." rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send">Envoyer</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Mes coordonnées</h2>
+        <p>📍 Casablanca, Maroc</p>
+        <p>📧 ouakmour.oussama@gmail.com</p>
+        <p>📞 0653327802</p>
+        <p>🌐 www.oussama-dev.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 Oussama Ouakmour — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html

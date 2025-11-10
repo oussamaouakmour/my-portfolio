@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV oussama ouakmour</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    . {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Colonne gauche */
+.left-column {
+  width: 35%;
+  background: #fafafa;
+  padding: 30px;
+  border-right: 1px solid #eee;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.left-column h1 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.left-column h1 span {
+  font-weight: 400;
+}
+
+.job-title {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.left-column h2 {
+  font-size: 14px;
+  color: #333;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.left-column ul {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Colonne droite */
+.right-column {
+  width: 65%;
+  padding: 30px;
+}
+
+.right-column h2 {
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.right-column p, .right-column li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.right-column h3 {
+  font-size: 15px;
+  color: #111;
+  margin-top: 15px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.edu-item {
+  margin-bottom: 10px;
+}
+
+/* Responsive (téléphone) */
+@media (max-width: 768px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="cv-container">
+    <!-- Colonne gauche -->
+    <aside class="left-column">
+      <div class="profile-pic">
+        <img src="img/af0207b5-42ab-4ca5-9515-bc3fff2c289b.jfif" alt="Photo de profil">
+      </div>
+
+      <h1>oussama <br><span>ouakmour</span></h1>
+      <p class="job-title"></p>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>📧 oussama.ouakmour@gmail.com</li>
+          <li>📍 deroua,Nouasser</li>
+          <li>📞 0653327802</li>
+          <li>🎂 04/07/2004</li>
+          <li></li>
+        </ul>
+      </section>
+
+         <section class="skills">
+        <h2>Compétences</h2>
+        <ul>
+          <li>HTML5 / CSS3 / JavaScript</li>
+          <li>React.js / Vue.js / Angular</li>
+          <li>Responsive Design</li>
+          <li>API REST & JSON</li>
+          <li>Flutter / Kotlin / Swift</li>
+          <li>Node.js / Express / PHP / Laravel</li>
+          <li>MySQL / Firebase / MongoDB</li>
+          <li>Git & GitHub / GitLab</li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="languages">
+        <h2>Langues</h2>
+        <ul>
+          <li>Français — bien</li>
+          <li>Anglais — bien</li>
+          <li>Italien —Débutant </li>
+          <li>arabic —bien</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Colonne droite -->
+    <main class="right-column">
+      <section class="objective">
+        <h2>Objectif</h2>
+        <p>
+         Passionné par les nouvelles technologies, je souhaite mettre mes compétences en développement web et mobile au service d’une entreprise innovante. Mon objectif est de concevoir des applications performantes, ergonomiques et évolutives, tout en continuant à développer mes compétences techniques et créatives
+        </p>
+      </section>
+
+      <!--<section class="experience">
+        <h2>Expériences</h2>
+        <h3>Spécialiste des communications</h3>
+        <p><strong>Agence AdVibes</strong> | Paris | Juin 2020 – Mars 2022</p>
+        <ul>
+          <li>Organisation d’événements dans la mode et la beauté.</li>
+          <li>Suivi opérationnel, logistique et budgétaire.</li>
+          <li>Création du site internet de l’événement.</li>
+          <li>Rédaction des roadbooks et coordination des prestataires.</li>
+        </ul>
+      </section> -->
+
+      <section class="education">
+        <h2>Formations</h2>
+        <div class="edu-item">
+          <h3>technicienne spécialisée</h3>
+          <p><strong>CMC Casablanca-Settat</strong> Stagiaire en développement mobile</p>
+        </div>
+        <div class="edu-item">
+          <h3>Baccalauréat en Sciences Physiques (option PC)</h3>
+          <p><strong>École Hassan II – Casablanca</strong> | 7_2023</p>
+        </div>
+        <div class="edu-item">
+          <h3></h3>
+          <p><strong></strong> </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
